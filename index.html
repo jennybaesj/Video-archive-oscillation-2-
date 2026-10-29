@@ -324,9 +324,9 @@
         const { data, error } = await supabase
           .from("videos")
           .select("id, title, video_url, sort_order")
-          .eq("Active", true)
-          .order("sort_order", { ascending: true })
-          .limit(10);
+.eq("Active", true)
+.order("sort_order", { ascending: true })
+.limit(10);
 
         if (error) throw error;
 
